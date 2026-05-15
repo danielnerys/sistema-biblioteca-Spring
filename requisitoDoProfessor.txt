@@ -1,0 +1,22 @@
+Atividade: 
+
+Crie um sistema de gerenciamento de biblioteca em Java com duas tabelas relacionais: livros e usuarios. O projeto segue o padrão DAO com uma estrutura organizada.
+
+✅ Funcionalidades mínimas esperadas:
+Cadastrar, listar, buscar e deletar usuários.
+Cadastrar, listar, buscar e deletar livros.
+Cada livro pode estar associado a um usuário (como se estivesse emprestado).
+Atributos tabela usuários:
+idUsuario
+Nome
+Endereço
+Telefone
+IdLivro
+Atributos tabela livros:
+idLivro
+Nome
+Autor
+Editora
+Desafio:
+Listar todos os livros de um determinado usuário;  
+Crie também uma interface de navegação (menu de opções) para que o usuário que utilizará a aplicação escolha qual funcionalidade ele deseja (Listar livro, listar usuário, cadastrar, etc)
