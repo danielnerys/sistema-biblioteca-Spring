@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
+
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
@@ -27,6 +29,11 @@ public class UsuarioController {
     @GetMapping("/{id}")
     public Optional<Usuario> buscarUsuario(@PathVariable Long id){
         return usuarioRepository.findById(id);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletarUsuario(@PathVariable Long id){
+        usuarioRepository.deleteById(id);
     }
 
 
